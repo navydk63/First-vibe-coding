@@ -3,16 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>This is Vibe Coding</title>
+  <title>초등학생 생일선물 고르기</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="hero">
-    <div class="glow"></div>
-    <p class="tag">✦ vibe coding</p>
-    <h1>This is Vibe Coding</h1>
-    <p class="subtitle">코드와 감각이 만나는 순간</p>
-    <p class="footer">auto-push test</p>
+  <div class="sky" aria-hidden="true">
+    <span class="balloon balloon--1">🎈</span>
+    <span class="balloon balloon--2">🎈</span>
+    <span class="balloon balloon--3">🎁</span>
+    <span class="confetti confetti--1"></span>
+    <span class="confetti confetti--2"></span>
+    <span class="confetti confetti--3"></span>
+    <span class="confetti confetti--4"></span>
+  </div>
+
+  <main class="page">
+    <header class="hero">
+      <p class="hero__badge">🎂 생일 파티 준비 중!</p>
+      <h1>초등학생<br>생일선물 고르기</h1>
+      <p class="hero__desc">마음에 드는 선물을 눌러보세요.<br>친구나 동생에게 딱 맞는 선물을 찾아볼까요?</p>
+    </header>
+
+    <section class="gift-grid" aria-label="생일선물 카테고리">
+      <button type="button" class="gift-btn btn-bounce" data-gift="장난감">
+        <span class="gift-btn__icon">🧸</span>
+        <span class="gift-btn__label">장난감</span>
+        <span class="gift-btn__hint">통통 튀는 버튼</span>
+      </button>
+
+      <button type="button" class="gift-btn btn-pulse" data-gift="그림책">
+        <span class="gift-btn__icon">📚</span>
+        <span class="gift-btn__label">그림책</span>
+        <span class="gift-btn__hint">반짝 빛나는 버튼</span>
+      </button>
+
+      <button type="button" class="gift-btn btn-wiggle" data-gift="과자 세트">
+        <span class="gift-btn__icon">🍪</span>
+        <span class="gift-btn__label">과자 세트</span>
+        <span class="gift-btn__hint">살랑살랑 흔들림</span>
+      </button>
+
+      <button type="button" class="gift-btn btn-pop" data-gift="블록·레고">
+        <span class="gift-btn__icon">🧱</span>
+        <span class="gift-btn__label">블록·레고</span>
+        <span class="gift-btn__hint">팡! 하고 커지기</span>
+      </button>
+
+      <button type="button" class="gift-btn btn-rainbow" data-gift="미술 도구">
+        <span class="gift-btn__icon">🎨</span>
+        <span class="gift-btn__label">미술 도구</span>
+        <span class="gift-btn__hint">무지개 색 변화</span>
+      </button>
+
+      <button type="button" class="gift-btn btn-sparkle" data-gift="보드게임">
+        <span class="gift-btn__icon">🎲</span>
+        <span class="gift-btn__label">보드게임</span>
+        <span class="gift-btn__hint">반짝별 효과</span>
+      </button>
+
+      <button type="button" class="gift-btn btn-shine" data-gift="스포츠 용품">
+        <span class="gift-btn__icon">⚽</span>
+        <span class="gift-btn__label">스포츠 용품</span>
+        <span class="gift-btn__hint">슥— 빛 지나가기</span>
+      </button>
+
+      <button type="button" class="gift-btn btn-spin" data-gift="인형·피규어">
+        <span class="gift-btn__icon">🪀</span>
+        <span class="gift-btn__label">인형·피규어</span>
+        <span class="gift-btn__hint">빙글빙글 돌기</span>
+      </button>
+
+      <button type="button" class="gift-btn btn-jelly" data-gift="과학 키트">
+        <span class="gift-btn__icon">🔬</span>
+        <span class="gift-btn__label">과학 키트</span>
+        <span class="gift-btn__hint">젤리처럼 쫀득</span>
+      </button>
+
+      <button type="button" class="gift-btn btn-float" data-gift="체험권">
+        <span class="gift-btn__icon">🎟️</span>
+        <span class="gift-btn__label">체험권</span>
+        <span class="gift-btn__hint">둥실둥실 떠오르기</span>
+      </button>
+    </section>
+
+    <p class="pick-result" id="pickResult" aria-live="polite">
+      선물 버튼을 눌러보세요!
+    </p>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
