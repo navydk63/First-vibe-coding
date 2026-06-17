@@ -71,3 +71,13 @@ h1 {
   color: rgba(245, 245, 247, 0.55);
   letter-spacing: 0.02em;
 }
+
+.footer {
+  position: relative;
+  z-index: 1;
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  color: rgba(245, 245, 247, 0.3);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
